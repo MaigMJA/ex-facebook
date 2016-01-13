@@ -1,72 +1,122 @@
 *{
   margin: 0;
   padding: 0;
-  z-index: 4;
 }
 
-.fond{
-  height: 800px;
-  width: 1000px;
-  background: linear-gradient(to bottom, white, blue);
-  opacity: 0.3;
-  z-index: 1;
+
+html, body{
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+  font-family: arial;
+}
+
+
+
+header{
   position: fixed;
+  height:30px;
+  width: 100%;
+  background-color: grey;
+  position:fixed;
+  top:0;
+  z-index: 10;
+
 }
 
-@font-face {
-  font-family:'FACEBOLF.OTF';
-
-  src:url(./FACEBOLF.OTF);
-  font-family: 'FACEBOLF.OTF';
+#topinfo, #droplang{
+  display: block;
+  list-style: none;
 }
 
+#droplang ul{overflow: hidden;}
 
-p{
-  font-family: sans-serif;
-  font-weight: inherit;
-}
-
-h1{
-  font-family: 'FACEBOLF.OTF';
-  padding: 30px 20px 20px 20px;
-  position:absolute;
-  color: white;
-}
-
-#header{
-height:70px;
-width:auto;
-background-color: #3b5998;
-padding: 0 100px;
-z-index: 3;
-}
-
-.entrees{
-  right:0;
-  position: absolute;
-}
-
-.blockinput{
-  height: 10px;
-  width: 50px;
+#topinfo{
   background-color: white;
+  color:#CCCCCC;
 }
 
-
-
-.middlecont{
-  text-align: center;
-  margin: 0 30px 0 30px;
-
+#topinfo ul li, #droplang ul li{
+  height:30px;
+  padding:1px;
+  margin:1px;
+  position: relative;
+  display: inline-block;
+  z-index: 11;
+  top :2px;
+  margin-left: 90px;
+  text-align: right;
 }
 
-.midleft{
-  top:180px;
-  left:50px;
+#droplang{
   position: absolute;
+  top:0;
+  left:90%
 }
 
-ul{
+#droplang :hover{
+  height:auto;
+  width: 30%;
+  text-decoration: underline;
+  z-index: 12;
+  top :20px;
+  margin-left: 90px;
+  background-color: grey;
+  border-radius: 2px;
+}
+
+
+
+
+footer{
+  height: 20px;
+  width: 100%;
+  background-color: green;
+  position: absolute;
+  /*top:95%;*/
+  bottom:0;
+  z-index: 16;
+}
+
+footer ul li {
+  font-size: 9px;
+  color: white;
+  list-style: none;
+  margin: auto;
+  margin-right: 2px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  z-index: 18;
+}
+
+
+.containt{
+  height: 70%; /*auto*/
+  /*min-height: 100%;*/
+  width: 70%;
+  /*min-width: 200%;*/
+  z-index: 1;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background-color: yellow;
+  top:12%;
+}
+
+
+
+a{text-decoration: 0;
+text-align: center;
+margin: 2px;
+color:grey;}
+
+
+
+
+
+
+/*ul{
   left: 600px;
   position: absolute;
   top:150px;
@@ -83,23 +133,9 @@ li{
   color:grey;
   position: relative;
   right:30px;
-}
+}*/
 
-.inscription{
-  font:18px bold;
-  color:white;
-  background-color: green;
-  border-radius:5px;
-  padding: 3px;
-  height:20px;
-  width: 200px;
-  text-align: center;
-  left:575px;
-  top:380px;
-  position: absolute;
-}
-
-#footer{
+/*#footer{
   background-color: white;
   height:140px;
   width: auto;
@@ -112,25 +148,4 @@ li{
 #footer p{
   color:grey;
   bottom:0;
-}
-
-.pblue, .pblack, .pwhite{
-font-size: 9px;
-}
-
-.pblue{
-  color:#3b5998;
-}
-
-.pblack{
-  color:black;
-}
-
-.pwhite{
-  color:white;
-}
-
-.container{
-  /*background: linear-gradient(to bottom, white, blue);
-  opacity: 0.3;*/
-}
+}*/
